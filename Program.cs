@@ -37,9 +37,7 @@ namespace Warspear_Online_Extractor
 
         class Subfile
         {
-            public int start = br.ReadInt32();
-            public int size = br.ReadInt32();
-            int unknown = br.ReadInt32();
+            public int start = br.ReadInt32(), size = br.ReadInt32(), unknown = br.ReadInt32();
             byte unknown2 = br.ReadByte();
             public string name = new string(br.ReadChars(55)).TrimEnd('\0');
         }
