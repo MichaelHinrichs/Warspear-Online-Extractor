@@ -20,9 +20,7 @@ namespace Warspear_Online_Extractor
 
             System.Collections.Generic.List<Subfile> subfiles = new();
             for (int i = 0; i < count; i++)
-            {
                 subfiles.Add(new());
-            }
 
             string path = Path.GetDirectoryName(args[0]) + "//" + Path.GetFileNameWithoutExtension(args[0]) + "//";
             foreach (Subfile file in subfiles)
